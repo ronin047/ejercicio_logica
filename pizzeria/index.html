@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<!-- La pizzería Pepitos requiere un algoritmo que permita informarle a los usuarios si reciben o no un premio por parte del negocio, se tienen las siguientes validaciones:
+Si es un niño menor a 10 años, debe ir a reclamar un jugo.
+Si es una persona mayor de edad (18 años) debe ir a reclamar una cerveza. 
+Y si es una mujer, debe reclamar adicionalmente una porción de pizza Hawaiana.
+O si es un hombre debe reclamar adicionalmente una porción de pizza tres carnes.
+Si no cumple ninguna de las condiciones, se le debe informar que desafortunadamente, no recibe ningún premio.
+-->
+<body>
+<h1 class="text-center"> pizzeria - premio</h1>
+
+<section class="container">
+
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="nino-10">
+        <label class="custom-control-label" for="customCheck1">Si es un niño menor a 10 años</label>
+    </div>
+    <!-- <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="nina-10">
+        <label class="custom-control-label" for="customCheck1">Si es un niña a 10 años</label>
+    </div> -->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="mayor_18">
+        <label class="custom-control-label" for="customCheck1">Si es una persona mayor de edad (18 años)</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="mujer">
+        <label class="custom-control-label" for="customCheck1">si es una mujer</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="hombre">
+        <label class="custom-control-label" for="customCheck1">si es un hombre</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="siNo">
+        <label class="custom-control-label" for="customCheck1">Si no cumple ninguna de las condiciones</label>
+    </div>
+
+    <form>
+        <div class="row mb-3 ">
+            <label class="col-4 col-sm-2 col-form-label">cual es su premio si hay?</label>
+        <div class="col-6 col-sm-10">
+            <input type="text" class="form-control" id="respuesta">
+        </div>
+        <div class="button-verfi d.flex justify-content center align-item center">
+            <button type="button" class="btn btn-lg btn-warning" onclick="verificar()" >verifica si tienes un premio, ?</button>
+        </div>
+        </div>
+    </form>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
